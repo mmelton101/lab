@@ -42,14 +42,14 @@ class Television:
 
     def volume_up(self) -> None:
         """
-        Turns volume up by 1. If the volume equals 2 the volume is set to 0
+        Turns volume up by 1. If the volume equals 2 the volume doesn't change
         """
         if self.__volume < Television.MAX_VOLUME and self.__is_turned_on:
             self.__volume += 1
 
     def volume_down(self) -> None:
         """
-        Turns volume down by 1. If the volume equals 0 the volume is set to 2
+        Turns volume down by 1. If the volume equals 0 the volume doesn't change
         """
         if self.__volume > Television.MIN_VOLUME and self.__is_turned_on:
             self.__volume -= 1
